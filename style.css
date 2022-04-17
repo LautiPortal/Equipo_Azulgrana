@@ -1,0 +1,263 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+/* 
+Sector Header
+*/
+
+header  {
+    width: 100%;
+    background: linear-gradient(67deg, rgba(201,0,0,1) 40%, rgba(45,27,187,1) 69%);
+    font-family: 'Acme', sans-serif;
+    text-shadow: 2px 2px 2px black;
+    
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+#Bandera1 {
+width: 80px;
+height: 50px;
+
+}
+
+#Bandera2 {
+    float: right;
+    width: 80px;
+    height: 50px;
+    }
+
+/* Sector Lista */
+
+Nav.Menu {
+    border: 1.5px solid black;
+}
+
+.ul_ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: sticky;
+} 
+
+ul li:hover {
+    background-image: linear-gradient(to right, lightblue, rgb(224, 77, 77));
+    border-radius: 5px;
+   }
+
+ul li {
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 23px;
+    font-style: italic;
+    margin-inline: 118px;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white
+    
+}
+
+/* Fondo */
+
+body main.fondo {
+    min-height: 100vh;
+    background-image: url(../Desafio-2/Imagenes/viejo-gasometro-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; 
+
+}
+
+/* Seccion Noticias */
+
+
+
+main section  {
+ display: grid;
+ grid-template-columns: 70% 30%;
+ grid-template-rows: repeat(2, 100%);
+ margin-left: 20%;
+}
+
+main iframe.Noticia {
+    margin: 40px;
+    padding: 0.5px;
+    width: 800px;
+    height: 600px;
+}
+
+main section iframe.Tweets {
+    right: 2px;
+    width: 400px;
+    height: 500px;
+    margin-top: 20%;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+    
+    header a h1 {
+        font-size: 30px;
+    }
+    
+    
+    #Bandera1 {
+     width: 40px;
+     height: 25px;
+     }
+    
+    #Bandera2 {
+        float: right;
+        width: 40px;
+        height: 25px;
+        }
+
+    Nav.Menu {
+        display: none; 
+        border: 1.5px solid black;
+    }
+
+    .Noticia-contenedora{
+     margin: 0;
+    }
+    
+    
+    main iframe.Noticia {
+        margin: 15px;
+        padding: 0.5px;
+        width: 400px;
+        height: 300px;
+    }
+    
+    main section iframe.Tweets {
+        margin-right: 10px;
+        width: 250px;
+        height: 300px;
+        margin-top: 20%;
+
+    }
+    
+  }
+  
+
+
+#galeria {
+    min-height: 100vh;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 300px);
+    gap: 15px;
+    align-items: center;
+    grid-template-areas:
+      "Plantel Estadio Socio Sedes"
+      "Historia Deportes Wallpaper Videos"
+}      
+
+
+.Plantel {
+    grid-area: Plantel;
+}
+
+.Estadio {
+ grid-area: Estadio;
+}
+
+.Socios {
+ grid-area: Socio;
+}
+
+.Sedes {
+ grid-area: Sedes;
+}
+
+.Historia {
+ grid-area: Historia;
+}
+
+.Deportes {
+ grid-area: Deportes;
+}
+
+.Wallpaper {
+ grid-area: Wallpaper;
+}
+
+.Videos {
+ grid-area: Videos;
+}
+
+      
+    
+#galeria img {
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-bottom: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-bottom: 0%;
+      width: 100%;
+    }
+  }
+  
+
+#galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    transition: transform 0.5s;
+}
+
+
+#galeria img:hover {
+ transform: scale(0.95);
+ filter:blur(0.8px)
+}
+
+
+
+
+footer#footer {
+    border: 1.5px solid black;
+    padding: 1px;
+    margin-top: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
