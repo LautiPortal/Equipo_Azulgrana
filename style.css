@@ -35,7 +35,7 @@ height: 50px;
     float: right;
     width: 80px;
     height: 50px;
-    }
+}
 
 /* Sector Lista */
 
@@ -53,7 +53,7 @@ Nav.Menu {
 ul li:hover {
     background-image: linear-gradient(to right, lightblue, rgb(224, 77, 77));
     border-radius: 5px;
-   }
+}
 
 ul li {
     list-style: none;
@@ -153,7 +153,7 @@ main section iframe.Tweets {
 
     }
     
-  }
+}
   
 
 
@@ -220,7 +220,7 @@ main section iframe.Tweets {
       margin-bottom: 0%;
       width: 100%;
     }
-  }
+}
   
 
 #galeria img {
@@ -236,8 +236,18 @@ main section iframe.Tweets {
  filter:blur(0.8px)
 }
 
+main div.container {
+    text-align: center;
+    color: red;
+}
 
-
+.Dato {
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+}
 
 footer#footer {
     border: 1.5px solid black;

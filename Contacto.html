@@ -35,23 +35,39 @@
     
     </header id="top">
     
-    <main>
- 
-        <form action="/ruta-destino" method="get" enctype="">
-            <fieldset>
-                <legend>Elementos de formulario</legend>
-                <label for="Nombre">Nombre</label>
-                <input type="text" name="userName" id="Nombre">
-                <input type="number" name="age" placeholder="Ingresa tu edad">
-                <input type="tel" name="phone" placeholder="Telefono" required value="11">
-                <input type="email" name="email" placeholder="Ingresa tu email" required>
-                <input type="password" placeholder="Contraseña" required>
-                <input type="date" name="date">
-                <textarea name="message" placeholder="Deja tu mensaje" cols="50" rows="1"></textarea>
-    
-                <!-- Checkbox -->
-
-                
+    <main class="fondo">
+     <div class="container">
+         <h1>Ingrese sus datos</h1>
+         <form action="#">
+	         <div class="form-group">
+  	             <ul>  
+                   <li class="formulario">  
+                     <!-- <label for="Nombre">Nombre:</label> -->
+                     <input class="Dato" type="text" placeholder="Nombre y apellido" name="userName" id="Nombre">
+                   </li>
+                   <li>  
+                     <!-- <label for="email">Email:</label> -->
+                     <input class="Dato" type="email" class="form-control" id="email" placeholder="Ingrese email" name="email">
+                   </li>
+                   <li>  
+                     <!-- <label for="password">Contraseña:</label> -->
+                     <input class="Dato" type="password" placeholder="Ingrese contraseña" required>
+                   </li>
+                   <li>  
+                     <!-- <label for="Nro de Socio">Nro de Socio:</label> -->
+                     <input class="Dato" type="text" placeholder="Ingrese su Nro de Socio" required>
+                   </li>
+                   <li>
+                     <textarea class="Dato" name="message" placeholder="Deja tu mensaje" cols="50" rows="1"></textarea> 
+                   </li>
+                </ul>
+            </div>
+            <button type="submit" class="btn btn-default">
+                Ingresar
+            </button>
+         </form>
+     </div>
+            <!-- <input type="date" name="date">
     </main>
 
 <fieldset>
