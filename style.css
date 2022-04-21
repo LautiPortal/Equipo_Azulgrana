@@ -50,6 +50,13 @@ Nav.Menu {
     position: sticky;
 } 
 
+
+.dropdown:hover > .dropdown-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+
 ul li:hover {
     background-image: linear-gradient(to right, lightblue, rgb(224, 77, 77));
     border-radius: 5px;
